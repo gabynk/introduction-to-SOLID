@@ -13,7 +13,7 @@ class TurnUserAdminController {
         user_id,
       });
 
-      return response.status(201).json(changedUserAdmin);
+      return response.status(200).json(changedUserAdmin);
     } catch (err) {
       return response.status(404).json({ error: "Mensagem do erro" });
     }
